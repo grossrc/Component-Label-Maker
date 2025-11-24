@@ -21,7 +21,7 @@ Built on Python 3.13.2. Interfaces with a NiimBot B1 label maker. The program is
 1.  **Get the Code**
     *   Click the green **Code** button at the top of this page and select **Download ZIP**.
     *   Extract the ZIP file to a folder on your computer.
-    *   Open a terminal (Command Prompt or PowerShell) by right clicking the folder. This will open with the proper directory.
+    *   Open a terminal (Command Prompt or PowerShell) by right-clicking the folder. This will open with the proper directory.
 
 2.  **Install Dependencies**
     Run the following command:
@@ -41,6 +41,8 @@ Built on Python 3.13.2. Interfaces with a NiimBot B1 label maker. The program is
     ```bash
     python label_maker_app.py
     ```
+## Quarks and Use-cases
+The generated code was designed to fit multiple label sizes, and it should size itself to each accordingly. One very odd quark of this program which I have tried and failed to solve is of the first initial print after connecting to the printer. The Niimbot printer will "print" two blank labels before actually adhering to the proper printed label from the program. I have no idea why this happens, and I've bounced around different solutions, which was like playing whack-a-mole. If I managed to solve this problem (usually by changing the transmitted label size), then other issue popped up. At the end of the day, the program works fine with this minor bug, but don't be alarmed when your first print double prints on blank labels.
 
 ## DigiKey API Help
-Getting the DigiKey API credentials can be difficult. I clicked around for a while before finding out where I needed to go. A Client_ID and Client_Secret are what's used by the DigiKey API to verify queries. To get these parameters from your DigiKey account, you must go to https://developer.digikey.com/ and create an organization/project/production app. The only specific API endpoint used for this program is "ProductInformation V4", so make sure that is what's selected when creating your "production app". Once created, you should have credentials which can be copied over to your .env file. This file will be referenced by the program anytime your credentails are needed.
+Getting the DigiKey API credentials can be difficult. I clicked around for a while before finding out where I needed to go. A Client_ID and Client_Secret are what's used by the DigiKey API to verify queries. To get these parameters from your DigiKey account, you must go to https://developer.digikey.com/ and create an organization/project/production app. The only specific API endpoint used for this program is "ProductInformation V4", so make sure that is what's selected when creating your "production app". Once created, you should have credentials that can be copied over to your .env file. This file will be referenced by the program anytime your credentials are needed.
