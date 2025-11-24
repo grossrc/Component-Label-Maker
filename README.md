@@ -5,8 +5,13 @@ The purpose of this program is to create a scannable label for parts whose origi
 
 ![alt text](assets/Program%20Still.png)
 
-## Demo Usage
-[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/nTQUwghvy5Q)
+## Video Demo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=qi7N0y7SEJM">
+    <img src="https://img.youtube.com/vi/qi7N0y7SEJM/0.jpg" alt="YouTube Video" />
+  </a>
+</p>
+
 
 ## Requirements
 Built on Python 3.13.2. Interfaces with a NiimBot B1 label maker. The program is built to accommodate other models of Niimbot printers, but they have not been explicitly tested.
